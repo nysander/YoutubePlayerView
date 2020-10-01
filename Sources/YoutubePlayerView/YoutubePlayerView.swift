@@ -129,6 +129,7 @@ open class YoutubePlayerView: UIView {
         webView.scrollView.isScrollEnabled = false
         webView.scrollView.bounces = false
         webView.navigationDelegate = self
+        webView.customUserAgent = "YTPlayer/1.0 (iPhone)"
         add(subview: webView)
     }
     
